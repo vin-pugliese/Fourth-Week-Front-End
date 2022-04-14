@@ -17,7 +17,7 @@ export class AppComponent {
   
 
   constructor(private httpClient: HttpClient){
-    this.httpClient.get<any>('http://localhost:8080/student/v1/get')
+    this.httpClient.get<any>('http://localhost:8080/vehicle/v1/get')
     .subscribe((e)=>{
       console.log(e);
       this.students = e;

@@ -1,0 +1,25 @@
+<mat-accordion id="x">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Studenti
+        </mat-panel-title>
+        <mat-panel-description>
+          attualmente iscritti
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p *ngFor="let student of students">{{student.name}} | {{student.numberPassport}}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Dipartimento
+        </mat-panel-title>
+        <mat-panel-description>
+          Università di fisciano
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p *ngFor="let department of departments">{{department.name}} | {{department.country}} | {{department.description}}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
