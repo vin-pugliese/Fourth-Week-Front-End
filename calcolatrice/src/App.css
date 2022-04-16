@@ -1,0 +1,29 @@
+
+
+.result {
+  height: 60px;
+  background-color: #bbb;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.result p {
+  font-size: 40px;
+  margin: 5px;
+
+}
+
+.calculator-body {
+  max-width: 650px;
+  margin:50px auto auto auto;
+}
+
+
+
+button {
+  width: 25%;
+  height: 60px;
+  font-size: 30px;
+  color:rgb(74, 175, 225);
+  background-color: rgb(87, 87, 87)
+}
